@@ -11,7 +11,7 @@ export const Input = () => {
     
     const handleCompile = async ()=>{
         try{
-            const postRequest = await axios.post("compiler-production-350a.up.railway.app/api/compile",{
+            const postRequest = await axios.post("https://compiler-production-350a.up.railway.app/api/compile",{
                 language : language,
                 code : code
             })
